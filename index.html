@@ -198,7 +198,7 @@
   </footer>
 
 
-  <section class="modal">
+  <section class="modal-feedback">
     <h2>Напишите нам</h2>
     <form class="feedback">
       <p>
@@ -207,14 +207,21 @@
       </p>
       <p>
         <label for="e-mail">Ваш email:</label>
-        <input class="user-e-mail" id="e-mail" type="text" name="email" placeholder="email@example.com">
+        <input class="user-email" id="e-mail" type="text" name="email" placeholder="email@example.com">
       </p>
       <p>
         <label for="user-message">Текст письма:</label>
-        <textarea id="user-message" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        <textarea class="user-message" id="user-message" name="name" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="btn feedback-btn" type="submit" name="button">Отправить</button>
+      <button class="btn feedback-btn" type="submit">Отправить</button>
     <form>
+    <button class="modal-close" type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+        <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+      </svg>
+    </button>
   </section>
+
+  <script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>

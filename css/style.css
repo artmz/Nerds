@@ -554,6 +554,7 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  margin-bottom: 70px;
 }
 
 .social-btn-list {
@@ -612,4 +613,142 @@ a {
   line-height: 22px;
   font-weight: normal;
   color: #000000;
+}
+
+.modal-feedback {
+  display: none;
+  width: 960px;
+  min-height: 590px;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  margin: 0;
+  margin-top: -295px;
+  margin-left: -480px;
+
+
+  padding-top: 70px;
+  padding-bottom: 85px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateY(-2000px);
+    }
+
+    70% {
+    transform: translateY(30px);
+    }
+
+    90% {
+    transform: translateY(-10px);
+    }
+
+    100% {
+    transform: translateY(0);
+}
+}
+
+.modal-feedback-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 77px;
+  right: 90px;
+
+  border: none;
+
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-close path{
+  fill: #fecccd;
+}
+
+.modal-close:hover path{
+  fill: #fb565a;
+}
+
+.modal-close:active path{
+  fill: #ffeeee;
+}
+
+.modal-close:active,
+.modal-close:focus {
+  outline: none;
+}
+
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 760px;
+  min-height: 260px;
+}
+
+.feedback label {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.feedback p {
+  margin: 0;
+  padding: 0;
+}
+
+.user-name,
+.user-email {
+  display: block;
+  width: 360px;
+  margin-bottom: 30px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.user-message {
+  width: 760px;
+  min-height: 115px;
+  margin-bottom: 45px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.feedback-btn {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-btn:hover {
+  background: #e74246;
+}
+
+.feedback-btn:active {
+  background: #d7373b;
 }
